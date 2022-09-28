@@ -17,10 +17,10 @@ const Cart = ({ cart }) => {
     return (
         <aside className='cart'>
             <p>Selected Products: {cart.length}</p>
-            <p>Total Price: {total}</p>
-            <p>Shipping Charge: {shipping}</p>
-            <p>Tax: {tax}</p>
-            <h5>Grand Total: {grandTotal}</h5>
+            <p>Total Price: {total.toFixed(2)}</p>
+            <p>Shipping Charge: {shipping.toFixed(2)}</p>
+            <p>Tax: {tax.toFixed(2)}</p>
+            <h5>Grand Total: {grandTotal.toFixed(2)}</h5>
         </aside>
     );
 };

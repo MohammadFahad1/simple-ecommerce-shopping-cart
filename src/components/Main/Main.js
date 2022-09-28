@@ -10,7 +10,7 @@ const Main = () => {
     const addToCart = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
-        addToDb(product.id)
+        addToDb(product.id);
     }
 
     return (
